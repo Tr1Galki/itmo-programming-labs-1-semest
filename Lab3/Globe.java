@@ -24,4 +24,12 @@ public abstract class Globe {
                 "sizeComparision='" + sizeComparision + '\'' +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Globe globe = (Globe) o;
+        return name.equals(globe.name) && Objects.equals(sizeComparision, globe.sizeComparision);
+    }
 }
