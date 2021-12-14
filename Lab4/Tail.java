@@ -1,6 +1,5 @@
 public class Tail {
     public static void main(String[] args) throws ShipExeption {
-        //ALT+INS
         Ponchik ponchik = new Ponchik("Пончик");
         Neznaika neznaika = new Neznaika("Незнайка");
         Sun sun = new Sun("Солнце", "такое же");
